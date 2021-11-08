@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:textAlignment="center"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_weight="0.07"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="enter Values"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editOp1"
+        android:layout_width="256dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editOp2"
+        android:layout_width="258dp"
+        android:layout_height="80dp"
+        android:elevation="1dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="+"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addition"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="-"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/subb"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="*"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiply"
+            android:layout_weight="0.03"/>
+
+        <Button
+            android:text="/"
+            android:layout_height="wrap_content"
+            android:id="@+id/division"
+            android:layout_width="78dp"
+            android:layout_weight="0.03" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clr"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_weight="0.03"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="332dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="result"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        tools:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/txtresult"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:text="0.00"
+        android:textSize="18sp" />
+
+</LinearLayout>

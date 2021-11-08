@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="381dp"
+        android:layout_height="504dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="3dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="Enter Temperature"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/btnConvert"
+            android:layout_below="@+id/btnConvert"
+            android:layout_marginTop="35dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_below="@+id/editText2" />
+
+
+        <RadioButton
+            android:id="@+id/radFahToCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="30dp"
+            android:text="Fahrenheit To Centigrade"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+        <RadioButton
+            android:id="@+id/radCelToFahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radFahToCelsius"
+            android:layout_below="@+id/radFahToCelsius"
+            android:layout_marginTop="34dp"
+            android:text="Centigrade To Fahrenheit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radCelToFahrenheit"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:onClick="convert_temp"
+            android:text="Convert Temperature"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
